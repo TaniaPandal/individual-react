@@ -5,6 +5,7 @@ import logo from "../img/logo.png";
 import React from 'react';
 import Discover from "../pages/Discover";
 import { Link } from 'react-router-dom';
+import "./NavBar.css";
 
 
 function BrandExample() {
@@ -13,9 +14,13 @@ function BrandExample() {
       <Navbar className= "color-nav" variant="light">
         <Container>
           <Navbar.Brand href="#home" style={{color: 'white'}}><img src={logo} alt="logo" width="50"/>Soundwave</Navbar.Brand>
-          <Nav className="ms-auto">
-            <Nav.Link style={{color: 'white'}}><Link to="/Discover" element={<Discover/>}/>Discover</Nav.Link>
-            <Nav.Link href="#features" style={{color: 'white'}}>Join</Nav.Link>
+          <Nav className="ms-auto d-flex justify-content-around">
+            <div>
+               <Link style={{color: 'white'}} to="/Discover" element={<Discover/>} className="discover">Discover</Link>
+            </div>
+            <div>
+               <Link href="#features" style={{color: 'white'}}>Join</Link>
+            </div>
           </Nav>
         </Container>
       </Navbar>

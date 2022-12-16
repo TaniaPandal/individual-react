@@ -1,7 +1,7 @@
-.color-nav{
-  background-color: #2F303A
-};
-.feel{
-  padding: 100px;
+
+
+.App{
+  background-color: #2F303A;
+  min-height: 100vh;
 }
 

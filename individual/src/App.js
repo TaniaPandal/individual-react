@@ -1,22 +1,22 @@
 import React from "react";
-import Home from "./pages/Home";
-import {BrowserRouter,Routes, Link} from "react-router-dom";
+import Home from "./componentes/pages/Home";
+import {BrowserRouter,Routes, Route} from "react-router-dom";
 import BrandExample from "./componentes/moleculas/NavBar";
 import ".//App.css";
+import Discover from "./componentes/pages/Discover";
 
 
 
 function App() {
   return (
     <BrowserRouter>
-      <div className= "App">
-        <BrandExample>
-        <Link to= "./pages/Home">{<Home/>}</Link>
-        </BrandExample>
-      </div>
-      <Home/>
-      <Routes>
-      </Routes>
+        <div className= "App">
+          <BrandExample/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path= "/Discover" element={<Discover/>}/>
+        </Routes>
+        </div>
     </BrowserRouter>
   
   );

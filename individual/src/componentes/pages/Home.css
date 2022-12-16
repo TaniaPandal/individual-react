@@ -1,0 +1,15 @@
+.home{
+    margin-top: 20vh;
+}
+
+.feel{
+    margin-left: 50vh;
+    z-index: 1;
+    position: absolute;
+}
+
+.girl{
+    height: 85%;
+    width: 85%;
+    overflow: hidden;
+}
